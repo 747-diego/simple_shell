@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -o testShell test.c typePrompt.c holberton.h readCommand.c
