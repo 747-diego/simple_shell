@@ -51,7 +51,7 @@ char *_strncpy(char *original, char *copied, int length)
  *
  * Return: the dest memory address
  */
-char *const_strncpy(char *original, const char *src, int n)
+char *const_strncpy(char *original, const char *copied, int length)
 {
 	int i;
 
