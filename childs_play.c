@@ -74,7 +74,8 @@ void parent_free_buff_commands(char *buffer, char **commands)
  *
  * Return: void
  */
-void create_path(char **commands, char *buffer, char **env, char **argv, int count)
+void create_path(char **commands, char *buffer, char **env, char **argv
+		, int count)
 {
 	struct stat fileStat2;
 	int i;
