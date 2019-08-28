@@ -1,6 +1,8 @@
 SIMPLE SHELL
 ============
 
+  <img src="https://techcrunch.com/wp-content/uploads/2015/11/holberton-logo-horizontal.jpg?w=990&crop=1">
+
 Recreate a simple shell for [Holberton](https://www.holbertonschool.com/). This assignment tasks us to build a shell which outputs exactly as the sh shell. 
 
 ### Prerequisites
@@ -45,7 +47,7 @@ Simple Shell files:
 |----------|-----------------|
 | holberton.h | Header file that contains all the functions and standard C library header files needed |
 | prompt.c | Contains the int main(void) function, entry point and **prompt_handler** |
-| _strtok.c | Contains function that store commands in double pointer: **find_command_length**, **array_from_strtok functions** |
+| _strtok.c | Contains function that store commands in double pointer: **find_command_length**, **array_from_strtok** |
 | helpers.c | Contains all helper functions: **_strncpy**,**_strncpyconst**, **_strlen_const**, **_strcmp**,**_strlen** |
 | habitat.c | Contains all functions that handle environment/path: **find_semis**, **store_env_variables**, **_getenv**, **_strncpycmd**, **print_env** |
 | free_all.c | Contains function that frees memory: **free_all** |
