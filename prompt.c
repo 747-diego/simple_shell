@@ -9,7 +9,7 @@ void prompt_handler(int sig)
 {
         (void)sig;
         write(STDOUT_FILENO, "\n$ ", 3);
-}}
+}
 
 /**
  * main - simple shell recreation
