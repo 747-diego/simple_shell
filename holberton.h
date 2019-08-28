@@ -11,6 +11,7 @@
 
 /* prompt.c */
 void prompt_handler(int sig);
+int cd(char *path);
 
 /* _strtok.c */
 unsigned int find_command_length(char *s);

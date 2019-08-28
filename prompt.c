@@ -1,4 +1,4 @@
-#include "holberton.h"
+include "holberton.h"
 /**
  * prompt_handler - handles signals and write the prompt
  * @sig: signal to handle
@@ -7,8 +7,8 @@
  */
 void prompt_handler(int sig)
 {
-	(void)sig;
-	write(STDOUT_FILENO, "\n$ ", 3);
+        (void)sig;
+        write(STDOUT_FILENO, "\n$ ", 3);
 }
 
 /**
@@ -23,7 +23,7 @@ int main(int argc, char **argv, char **env)
 {
 	char *buffer, **commands;
 	size_t length; ssize_t characters;
-	char *prompt = "$ ", *exit_command = "exit", *env_command = "env";
+	char *prompt = "$ ", *exit_command = "exit", *env_command = "env", *cd_command = "cd";
 	pid_t child; struct stat fileStat;
 	int status, count;
 	(void)argc;
@@ -47,6 +47,19 @@ int main(int argc, char **argv, char **env)
 		++count;
 		/* collects commands from prompt and store in a double pointer array */
 		commands = array_from_strtok(buffer);
+
+
+		if (_strcmp(cd_command, commands[0]))
+		{
+
+			if (cd(commands[1]) < 0)
+			{
+				perror(commands[1]);
+			}
+			continue;
+		}
+
+
 		/*create a new process */
 		child = fork();
 		if (child == -1)
@@ -56,15 +69,19 @@ int main(int argc, char **argv, char **env)
 			/* check if commands is NULL or all empty spaces */
 			if (commands == NULL)
 				command_is_null(buffer);
+
 			/* check if the command is an EXIT to exit the shell */
 			else if (_strcmp(exit_command, commands[0]))
 				exit_out(buffer, commands);
+
 			/* check if the command is ENV to print out environment variables */
 			else if (_strcmp(env_command, commands[0]))
 				env_out(buffer, commands, env);
+
 			/* check if the command is a full path to an executable file */
 			else if (stat(commands[0], &fileStat) == 0)
 				execve(commands[0], commands, NULL);
+
 			/* check all $PATH directories for executable commands */
 		        else
 				create_path(commands, buffer, env, argv, count);
