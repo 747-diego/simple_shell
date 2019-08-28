@@ -1,9 +1,7 @@
 SIMPLE SHELL
 ============
 
-<div>
-  <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Ftechcrunch.com%2Fwp-content%2Fuploads%2F2015%2F11%2Fholberton-logo-horizontal.jpg%3Fw%3D730%26crop%3D1&imgrefurl=https%3A%2F%2Ftechcrunch.com%2F2015%2F11%2F27%2Fholberton-wants-to-be-a-different-kind-of-coding-school%2F&docid=qBWuEn2Yxgy8kM&tbnid=TBL1o5ry7FLOEM%3A&vet=10ahUKEwjrvtaixKbkAhVDh-AKHddnCk4QMwhBKAIwAg..i&w=730&h=266&bih=481&biw=1098&q=holberton%20school%20logo&ved=0ahUKEwjrvtaixKbkAhVDh-AKHddnCk4QMwhBKAIwAg&iact=mrc&uact=8">
-</div>
+  <img src="https://techcrunch.com/wp-content/uploads/2015/11/holberton-logo-horizontal.jpg?w=990&crop=1">
 
 Recreate a simple shell for [Holberton](https://www.holbertonschool.com/). This assignment tasks us to build a shell which outputs exactly as the sh shell. 
 
