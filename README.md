@@ -47,12 +47,12 @@ Simple Shell files:
 |----------|-----------------|
 | holberton.h | Header file that contains all the functions and standard C library header files needed |
 | prompt.c | Contains the int main(void) function, entry point and **prompt_handler** |
-| _strtok.c | Contains function that store commands in double pointer: **find_command_length**, **array_from_strtok functions** |
+| _strtok.c | Contains function that store commands in double pointer: **find_command_length**, **array_from_strtok** |
 | helpers.c | Contains all helper functions: **_strncpy**,**_strncpyconst**, **_strlen_const**, **_strcmp**,**_strlen** |
 | habitat.c | Contains all functions that handle environment/path: **find_semis**, **store_env_variables**, **_getenv**, **_strncpycmd**, **print_env** |
-| free_all.c | Contains function that frees memory: **free_it_all** |
+| free_all.c | Contains function that frees memory: **free_all** |
 | errors.c | Contains functions that handle error messages: **build_error_message**, **_puterror**, **end_of_file**, **fork_fail**|
-| childs_play.c | Contains functions that handle all child proccess functionality: **command_is_null**, **exit_out**, **env_out**, **parent_free_buff_commands**, **c_path**|
+| childs_play.c | Contains functions that handle all child proccess functionality: **command_is_null**, **exit_out**, **env_out**, **parent_free_buff_commands**, **create_path**|
 
 ## How to Install
 Clone the repo below
