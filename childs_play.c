@@ -22,11 +22,9 @@ void command_is_null(char *buffer)
  */
 void exit_out(char *buffer, char **commands)
 {
-
 	free(buffer);
 	free_all_double_ptr(commands);
 	exit(EXIT_SUCCESS);
-
 }
 
 /**

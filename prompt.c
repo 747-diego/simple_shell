@@ -1,4 +1,4 @@
-include "holberton.h"
+#include "holberton.h"
 /**
  * prompt_handler - handles signals and write the prompt
  * @sig: signal to handle
