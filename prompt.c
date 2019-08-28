@@ -21,7 +21,7 @@ void prompt_handler(int sig)
  */
 int main(int argc, char **argv, char **env)
 {
-	char *buffer; char **commands;
+	char *buffer, **commands;
 	size_t length; ssize_t characters;
 	char *prompt = "$ ", *exit_command = "exit", *env_command = "env";
 	pid_t child; struct stat fileStat;
