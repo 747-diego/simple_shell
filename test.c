@@ -1,15 +1,14 @@
 #include "holberton.h"
 
-int main()
-
+int main(int argc, char **argv, char **env)
 {
 
 
-	char cmd[100], command[100], *parameters[20]; /* 2 arrays to hold the commands and array of pointers to hold the parameters */
+	char cmd[1000], command[1000], *parameters[200]; /* 2 arrays to hold the commands and array of pointers to hold the parameters */
 
 
 	/* defines enviroment  variables */
-	char *envp[] = { (char *) "PATH=/bin", 0};
+	/* char *envp[] = { (char *) "PATH=/bin", 0}; */
 
 
 	while (1) /* display prompt forever */
@@ -26,9 +25,9 @@ int main()
 		else
 
 		{
-			strcpy(cmd, "/bin/"); /* coppies the bin directory into cmd array */
+			strcpy(cmd, "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"); /* coppies the bin directory into cmd array */ 
 			strcat(cmd, command); /* concatenates that command into cmd array */
-			execve(cmd, parameters, envp); /* executing command coming from envp */
+			execve(cmd, parameters, env); /* executing command coming from env */
 		}
 
 		if (strcmp(command, "exit") == 0) /* if exit command is typed in.exit the loop */
