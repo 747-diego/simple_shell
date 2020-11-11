@@ -128,4 +128,4 @@ drwxrwxr-x 7 vagrant vagrant  4096 Aug 28 14:05 SHELL_TEST
 
 ## Authors
 * Diego Tardio
-* Jonathan Patterson
+
